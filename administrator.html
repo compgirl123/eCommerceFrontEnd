@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="administrator-css.css">
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("addNewProduct");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+  }
+	</script>
+  
+  </head>
+  <style>
+.navbar 
+{ 
+  min-height: 68px;
+  margin-bottom : 0px !important;
+}
+  </style>
+
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="main.html"><img src="storu.jpg" width="90px" height="35px"></a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="main.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+    </ul>
+	
+	<ul class="nav navbar-nav navbar-left">
+     <li class="overview"><a href="#"> Overview </a>
+	</li>
+     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Product Detail <span class="caret"></span></a>
+     <ul class="dropdown-menu">
+          <li><a href="#">Television</a></li>
+          <li><a href="#">Desktop Computers</a></li>
+          <li><a href="#">Monitors</a></li>
+		  <li><a href="#">Laptops</a></li>
+		  <li><a href="#">Tablets</a></li>
+    </ul>
+    </li>
+	 <li><a href="#"> Settings </a>
+    </li>
+    </ul>
+	</div>
+</nav>
+	
+	
+<!-- Left sidebar -->
+<!-- >
+<aside class="leftbar" style="z-index:3; width:250px; ">
+<hr>
+<ul class="list-accordion tree-style">
+  <div class="container-top" style="font-size:20px; list-style-type:none;">
+    <li class="list-title"> Dashboard </li>
+    <li><a href="#"><i class="view-web"></i><span class="overview page"> Overview </span></a></li>
+    <li><a href="#"><i class="view-web"></i><span class="view page"> Views </span></a></li>
+    <li><a href="#"><i class="view-web"></i><span class="setting page"> Settings </span></a></li>
+  </div>
+  </ul>
+</aside>
+<-->
+
+<!-- Main Part -->
+<section class="main-container">
+
+<main id="main-container"><div class="content bg-image overflow-hidden" >
+<div class="push-50-t push-15">
+<h1 class="h2 text-white animated zoomIn" > Dashboard</h1>
+</div>
+</div>
+
+
+<div class="main" style="margin-left:100px;margin-top:43px;">
+
+<!--Functional button-->
+  <div class="botton">
+    <div class="quarter">
+        <button onclick="myFunction()" style="float: center-left; "><h4> Add Product </h4></button>
+        <button style="float: center; "><h4> Update </h4></button>
+        <button style="float: center-right; "><h4> Remove Product </h4></button>
+	</div>
+  </div>
+  
+</div>
+
+</section>
+
+<article>
+<div id = "addNewProduct">
+	<div class="add column productbox">
+	
+	<h5> Choose the type of the product </h5>
+	<select style="font-size = 20px;">
+		<option value="Television">Television</option>
+		<option value="Desktop Computers">Desktop Computers</option>
+		<option value="Monitors">Monitors</option>
+		<option value="Laptops">Laptops</option>
+		<option value="Tablets">Tablets</option>
+	</select><br><br>
+
+	<div class="detail-of-product" >
+		<input type="text" placeholder="Brand Name"/><br><br>
+		<input type="text" placeholder="Price"/><br><br>
+		<input type="text" placeholder="Model Number"/><br><br>
+		
+        <input type="text" placeholder="Dimention (cm)"/><br><br>
+		<input type="text" placeholder="Weight"/><br><br>
+		
+		<input type="text" placeholder="Processor Type"/><br><br>
+		<input type="text" placeholder="RAM size"/><br><br>
+		<input type="number" placeholder="Number of CPU cores"/><br><br>
+		<input type="text" placeholder="Hard drive size"/><br><br>
+
+        <input type="text" placeholder="Size"/><br><br>
+		
+		<input type="text" placeholder="Battery Information"/><br><br>
+		<input type="text" placeholder="Operating System"/><br><br>
+		<input type="text" placeholder="Camera (Y/N)"/><br><br>
+		<input type="text" placeholder="Touch-screen (Y/N)"/><br><br>
+		
+		<input type="submit" value="Submit">
+		<input type="reset">
+	</div>
+</div></div>
+
+<div id = "removeNewProduct">
+	<div class="remove column productbox">
+	
+	<img src="product-images/mbp13touch.jpeg" class="img-responsive">
+    <div class="producttitle">MacBook Pro 13inch + TouchBar</div>
+    <div class="productprice"><div class="pull-right">
+	<a href="#" class="btn btn-danger btn-sm" role="button">modify</a>
+	<a href="#" class="btn btn-danger btn-sm" role="button">remove</a></div>
+	<div class="pricetext">$1599.99</div></div>
+	
+</div></div>
+
+</article>
+
+</body>
+</html>
