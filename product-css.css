@@ -1,0 +1,74 @@
+.register{
+  padding: 10%;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 35px;
+  text-align: center;
+}
+.h2{
+	position:relative;
+	text-align: center;
+}
+.form input {
+  background: #cdcdd2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.form button {
+  outline: 0;
+  background: #606aa2;
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.form .message {
+  margin: 10px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #606aa2;
+}
+
+body {
+  background: #cdcdd2;     
+}
+
+.productbox {
+    background-color:#ffffff;
+  padding:20px;
+  margin-bottom:10px;
+  margin:1%;
+  border-style: solid;
+  border-color: grey;
+  -webkit-box-shadow: 0 8px 6px -6px  #999;
+     -moz-box-shadow: 0 8px 6px -6px  #999;
+          box-shadow: 0 8px 6px -6px #999;
+}
+
+.producttitle {
+    font-weight:bold;
+  padding:5px 0 5px 0;
+}
+
+.productprice {
+  border-top:1px solid #dadada;
+  padding-top:5px;
+}
+
+.pricetext {
+  font-weight:bold;
+  font-size:1.4em;
+}
