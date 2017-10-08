@@ -6,7 +6,6 @@
 }
 }
 
-
 .dropdown
 {
 	 font-family: 'Amatic SC', cursive;
@@ -34,7 +33,7 @@ ul.nav a:hover
 
 .navbar 
 { 
-  min-height: 68px; // your value here.
+  min-height: 68px; 
   margin-bottom : 0px !important;
 }
 
@@ -65,7 +64,7 @@ html, body {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    top:-20px;
+   
     position: relative; 
     width: 100%; /* for IE 6 */
 }
